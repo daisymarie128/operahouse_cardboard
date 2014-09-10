@@ -1,0 +1,115 @@
+<div class="index-container">
+  <div id="popUpDiv">
+    <h1>Welcome to THREEDEE!</h1>
+    <p>THREEDEE is a 3D audio visualiser. Use the tabs on the right on left hand sides to drag and drop music files and play with different visualisations for your music. ENJOY!<br>This site was created by 4 amazing developers who were passionate about Audio and 3D Visualisation.<br>Allen Hsu, Xuan Lopex, Tomas Mitchel and Daisy Smith.</p>
+    <a href="#" id="popup" >Click to Close</a>
+  </div>
+
+  <div id="drop-zone">
+    <h2>Drag n' Drop!</h2>
+    <h4>Supported file types: mp3, wav, aiff, or ogg</h4>
+  </div>
+  <p id="upload" class="hidden">
+    <label>Drag & drop not supported, but you can still upload via this input field:<br><input type="file"></label>
+  </p>
+
+  <div id="soundcloud-url">
+    <h2>Soundcloud Paste n' Play!</h2>
+    <div id="sc-url-content">
+      <p>Find a track on <a href="http://www.soundcloud.com">http://www.soundcloud.com</a> and paste the URL below in the following format: http://soundcloud.com/artist/track.</p>
+      <input type="url" placeholder="(http://soundcloud.com/artist/track)">
+      <p class="disclaimer">Soundcloud playlist links are currently not supported and will break. Sorry.</p>
+    </div>
+  </div><!--///////////// close soundcloud-url ////////-->
+
+  <div id="visualiser-canvas"></div><!--///////////close visualiser ////////-->
+
+  <div id="player"></div><!--//////////// player //////////-->
+</div>
+
+
+<div id="sidebar-container">
+  <div class="sound-panel">
+    <a class="sound-tab" href="#">
+    <div id="span-container">
+      <span id="S">S</span>
+      <span>O</span>
+      <span>U</span>
+      <span>N</span>
+      <span>D</span>
+    </div>
+    </a>
+    <div class="under-color">
+      <div id="mp3-drop-menu">MP3 DROP</div>
+    </div>
+    <div class="under-color">
+      <div id="soundcloud-menu">SOUNDCLOUD URL</div>
+    </div>
+  </div><!--///////////// close sound-panel ////////-->
+
+  <div class="vis-panel">
+    <a class="vis-tab" href="#">
+    <div id="span-container">
+      <span>V</span>
+      <span id="I">I</span>
+      <span>S</span>
+      <span>U</span>
+      <span>A</span>
+      <span>L</span>
+    </div>
+    </a>
+
+      <select name="visualisers" id="visualisers_list">
+      <option value="sunflare">sunflare</option>
+      <option value="lines">lines</option>
+      <option value="cubeGrid">cubeGrid</option>
+      </select><!--///////////// close select menu ////////-->
+
+     <div id="controllsList">
+      <form id="linesSpeedControls">
+        <ul>
+          <li>SpeedX:<br><input type="range" id="speedControlX" name="speedControlX" min="-3.9" max="10.0"></li>
+          <li>SpeedY:<br><input type="range" id="speedControlY" name="speedControlY" min="-3.9" max="10.0"></li>
+          <li>SpeedZ:<br><input type="range" id="speedControlZ" name="speedControlZ" min="-3.9" max="10.0"></li>
+          <li id="line-thick">Line Thickness:<br><input type="range" id="lineWidthControler" name="lineWidthControler" min="-0.9" max="10.0"></li>
+          <li id="line-backcolor">Background Color: <input type="color" id="backgroundColorControl" name="backgroundColorControl"></li>
+
+          <input value="Start" type="submit" id="linesSubmit">
+          <input type="submit" id="lines-save" value="Save" class="save-button">
+        </ul>
+      </form><!--////////////////// close form linesSpeedControls//////////-->
+
+      <form id="sunflareControls">
+        <ul>
+          <li>Rotation SpeedY: <input type="range" id="sunflare-rotationX" name="sunflare-rotationX" min="-50" max="50"></li>
+          <li>Rotation SpeedX: <input type="range" id="sunflare-rotationY" name="sunflare-rotationY" min="-50" max="50"></li>
+          <li>Type of Star: <input type="range" id="sunflare-size" min="1" max="120"></li>
+
+          <input value="Start" type="submit" id="sunflareSubmit">
+          <input type="submit" id="sunflare-save" value="Save" class="save-button">
+
+        </ul>
+      </form><!--////////////////// close form sunflareControls//////////-->
+
+      <form id="cubeGridControls">
+        <ul>
+          <li>Particle Number: <input type="range" id="particleNumber" min="10" max="500"></li>
+          <li>Particle Speed Base: <input type="range" id="particleSpeedBase" min="10" max="150"></li>
+          <li id="particle-speed">Particle Speed Spread: <input type="range" id="particleSpeedSpread" min="0" max="200"></li>
+
+          <li id="cube-strength">Cube Strength: <input type="range" id="cubeStrength" min="1" max="50"></li>
+          <li id="cube-text">Text: <input type="text" id="cubeYourText"></li>
+          <li id="cube-backcolor">Background Color: <input type="color" id="cubeBackgroundColorControl"></li>
+          <li id="cube-textcolor">Text Color: <input type="color" id="cubeText3dColor"></li>
+
+          <input value="Start" type="submit" id="cubeGridSubmit">
+          <input type="submit" id="cubegrid-save" value="Save" class="save-button">
+        </ul>
+      </form><!--////////////////// close form cubeGridControls//////////-->
+    </div><!--////////////////// close controllsList //////////-->
+  </div><!--///////////// close vis-panel ////////-->
+
+</div><!--///////////// close sidebar-container ////////-->
+
+
+

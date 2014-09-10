@@ -1,0 +1,219 @@
+.sound-panel, .vis-panel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* sound panel */
+.sound-panel {
+  width: 250px;
+  background-color: #FFF;
+  position: absolute;
+  height: 170px;
+  top: 100px;
+  left: -250px;
+  padding-bottom: 50px;
+}
+
+/* sound and visual tab */
+a.sound-tab, a.vis-tab {
+  display: block;
+  background: #FFF;
+  position: relative;
+  bottom: 0px;
+  font-size: 1.5em;
+  padding: 12px 8px 12px 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* sound tab */
+a.sound-tab {
+  float: right;
+  left: 36px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* Each letter for the vertical word tabs for sound panel */
+a.sound-tab span {
+  display: block;
+}
+
+/* visual panel*/
+.vis-panel {
+  width: 250px;
+  height: auto;
+  background: #FFF;
+  position: absolute;
+  color: #000;
+  top: 100px;
+  right: -250px;
+  padding-bottom: 30px;
+  font-family: 'Raleway', sans-serif;fon
+}
+
+/* visual tab */
+a.vis-tab {
+  float: left;
+  right: 30px;
+  border-radius: 15px 0px 0px 15px;
+  border-width: 1px 0px 1px 1px;
+}
+
+/* Each letter for the vertical word tabs for visuals panel */
+a.vis-tab span {
+  display: block
+}
+
+/* div for colour underneath sound menu options */
+.under-color {
+  background-color: #FFF;
+/*  height: 59px;
+  width: 245px;*/
+}
+
+/* mp3 menu button */
+#mp3-drop-menu {
+  position: absolute;
+  width: 245px;
+  top: 0px;
+}
+
+/* soundcloud menu button */
+#soundcloud-menu {
+  position: absolute;
+  width: 245px;
+  top: 59px;
+}
+
+/* mp3 menu button & soundcloud menu button */
+#mp3-drop-menu, #soundcloud-menu {
+  background-color: #FFF;
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 22px;
+  color: #000;
+  /*text-shadow: 0px 0px 15px white, 2px 2px 3px black;*/
+  /*border-bottom: 1px solid #94FFFF;*/
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+#mp3-drop-menu:hover,
+#soundcloud-menu:hover{
+  color: #F5533D;
+  text-shadow: 0px 0px 10px black, 2px 2px 3px black;
+}
+
+/* all buttons */
+#sign-in-link:hover a,
+#sign-up-link:hover a {
+  color: #FFF;
+  text-shadow: 0px 0px 10px white, 2px 2px 3px black;
+  /*border-bottom: 4px solid #FFF;*/
+  /*box-shadow: 0 0 15px white;*/
+}
+
+/* hover for tab spans */
+#span-container:hover {
+  display: block;
+  color: #F5533D;
+  text-shadow: 0px 0px -4px #000, 34px 28px 26px #000;
+}
+
+/* visualiser select box */
+#visualiser_list {
+
+}
+
+/*///////////////////// visual panel form styles //////////////////*/
+select, input[type="color"][list] {
+  background-color: white;
+  border: 0px;
+  font-size: 1em;
+  font-weight: 0.5em;
+}
+
+#sunflareSubmit, #sunflare-save, #linesSubmit, #lines-save, #cubeGridSubmit, #cubegrid-save, #visualisers_list {
+  /*position: absolute;*/
+  margin: 20px 0 0 40px;
+  background-color: #F5533D;
+  color: #FFF;
+  font-size: 1em;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#sunflareSubmit, #sunflare-save, #linesSubmit, #lines-save, #cubeGridSubmit, #cubegrid-save {
+  margin-bottom: 5px;
+}
+
+#sunflareSubmit:active, #sunflare-save:active, #linesSubmit:active, #lines-save:active {
+  box-shadow: inset 0 0 5px black;
+}
+
+#controllsList{
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+#controllsList ul{
+  padding: 0px;
+}
+
+#controllsList ul{
+  list-style: none;
+}
+
+#cube-strength, #cube-backcolor, #line-thick, #line-backcolor, #cube-text, #cube-textcolor #particleSpeedSpread, #particle-speed, #cube-textcolor, #cubeText3dColor{
+  margin-left: 28px;
+}
+
+#cubeBackgroundColorControl, #cubeText3dColor, #backgroundColorControl {
+  padding: 0 0 0 0;
+  margin-bottom: 5px;
+}
+
+#cubeText3dColor {
+  margin-left: 0;
+}
+
+#cubeYourText {
+  border: 0px;
+  border-radius: 5px;
+  padding: .3em;
+  margin-bottom: 5px;
+  margin-left: 13px;
+  width: 122px;
+}
+
+input[type='range']{
+  -webkit-appearance: none;
+    border-radius: 0.5px;
+    box-shadow: inset 0 0 1px #333;
+    background-color: #A7EBF0;
+    height: 1px;
+    vertical-align: middle;
+    box-shadow: 1px 1px 1px 1px rgba(42, 40, 107, 1);
+}
+input[type='range']::-moz-range-track {
+    -moz-appearance: none;
+    border-radius:0.5px;
+    box-shadow: inset 0 0 1px #333;
+    background-color: #A7EBF0;
+    height: 1px;
+    box-shadow: 0 0 5px 5px rgba(42, 40, 107, 1);
+  }
+
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: #666;
+    opacity: 1;
+    width: 5px;
+    height: 15px;
+}
+
+

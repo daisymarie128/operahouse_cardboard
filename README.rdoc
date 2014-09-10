@@ -1,0 +1,20 @@
+== README
+
+Project 2
+Team DNM
+3d Visualiser
+
+Built Using: 
+  three.js - WebGL wrapper
+  Web audio API
+  
+Functions:
+  -Drag and drop mp3 playing
+  -Soundcloud urls playing
+  -Three Visualisers with live adjustable settings
+    -GLSL based Sunflare
+    -Line visualiser with colors change dependent on frequency analysis
+    -Cube grid with particle effects
+    
+
+{Link on Ninefold}[http://teamdnmmaster51da.ninefold-apps.com]

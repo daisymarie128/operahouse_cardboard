@@ -1,0 +1,18 @@
+<div id="signup">
+      <h2>Sign Up</h2>
+      <%= form_for @user do |f| %>
+        <h3>
+        <%= f.text_field :username, :autofocus => true, :placeholder => "Username" %>
+        </h3>
+
+        <h3>
+        <%= f.password_field :password, :placeholder => "Password"%>
+        </h3>
+
+        <h3>
+        <%= f.password_field :password_confirmation, :placeholder => "Confirm Password"%>
+        </h3>
+
+        <%= f.submit %>
+      <% end %>
+</div><!--/////// close signup //////-->

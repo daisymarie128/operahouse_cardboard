@@ -1,0 +1,28 @@
+<div id="loginpage">
+<div id="logintext">
+</div><!--//////////// close login text ////// -->
+
+<div id="loginline">
+</div><!--//////////// close loginline ////// -->
+
+
+<div id="login">
+
+  <h3>SIGN IN:</h3>
+
+<%= form_tag('/login') do %>
+<h2><%= label_tag :username, "Username:" %>
+<%= text_field_tag :username %>
+</h2>
+
+<h2><%= label_tag :password, "Password:" %>
+<%= password_field_tag :password %>
+</h2>
+
+<%= submit_tag 'submit' %>
+
+<% end %>
+
+</div><!-- /////// close login //////-->
+
+</div><!-- /////// close loginpage //////-->

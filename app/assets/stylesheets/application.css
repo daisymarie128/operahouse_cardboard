@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require jquery-ui
+ *= require_self
+ */
+
+/*@import url(http://fonts.googleapis.com/css?family=Inconsolata);*/
+@font-face { font-family: Insaniburger; src: url(../fonts/Insanibu.ttf); }
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+* {
+  font-family: Insaniburger;
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: #F5533D;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Insaniburger;
+  margin: 0;
+}
+
+#gh-btn {
+  position: relative;
+  z-index: 10;
+  width: 20px;
+  margin: 1px 10px 0 0;
+  width: 20px;
+}
+
+#title {
+  position: fixed;
+  left: 65px;
+  top: -18px;
+  z-index: 10;
+  display: block;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  padding: 0 10px 0 10px;
+  margin-left: 5px;
+
+}
+
+#nav, #inner-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  background-color: #F5533D;
+}
+
+#nav {
+  height: 41px;
+  /*background: #B5FFFB;*/
+  text-align: right;
+}
+
+#inner-nav {
+  height: 40px;
+  /*background: #2F3030;*/
+}
+
+#sign-up-link,
+#sign-in-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-right: 12.5px;
+  padding-left: 12.5px;
+}
+
+#sign-up-link a,
+#sign-in-link a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+
+#sign-up-link a:hover,
+#sign-in-link a:hover {
+  color: #000;
+}
+
+#sign-up-link,
+#sign-in-link {
+  border-left: 1px solid #FFF;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+}
