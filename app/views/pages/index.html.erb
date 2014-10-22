@@ -1,7 +1,8 @@
 <div class="index-container">
   <div id="popUpDiv">
-    <h1>Welcome to THREEDEE!</h1>
-    <p>THREEDEE is a 3D audio visualiser. Use the tabs on the right on left hand sides to drag and drop music files and play with different visualisations for your music. ENJOY!<br>This site was created by 4 amazing developers who were passionate about Audio and 3D Visualisation.<br>Allen Hsu, Xuan Lopex, Tomas Mitchel and Daisy Smith.</p>
+    <h1>OCTOBER AT THE HOUSE!</h1>
+    <p>Something Something Something Bryan Adams....</p>
+
     <a href="#" id="popup" >Click to Close</a>
   </div>
 
@@ -28,24 +29,7 @@
 </div>
 
 
-<div id="sidebar-container">
-  <div class="sound-panel">
-    <a class="sound-tab" href="#">
-    <div id="span-container">
-      <span id="S">S</span>
-      <span>O</span>
-      <span>U</span>
-      <span>N</span>
-      <span>D</span>
-    </div>
-    </a>
-    <div class="under-color">
-      <div id="mp3-drop-menu">MP3 DROP</div>
-    </div>
-    <div class="under-color">
-      <div id="soundcloud-menu">SOUNDCLOUD URL</div>
-    </div>
-  </div><!--///////////// close sound-panel ////////-->
+<!--  -->
 
   <div class="vis-panel">
     <a class="vis-tab" href="#">
@@ -60,9 +44,9 @@
     </a>
 
       <select name="visualisers" id="visualisers_list">
-      <option value="sunflare">sunflare</option>
+
       <option value="lines">lines</option>
-      <option value="cubeGrid">cubeGrid</option>
+
       </select><!--///////////// close select menu ////////-->
 
      <div id="controllsList">
@@ -73,39 +57,10 @@
           <li>SpeedZ:<br><input type="range" id="speedControlZ" name="speedControlZ" min="-3.9" max="10.0"></li>
           <li id="line-thick">Line Thickness:<br><input type="range" id="lineWidthControler" name="lineWidthControler" min="-0.9" max="10.0"></li>
           <li id="line-backcolor">Background Color: <input type="color" id="backgroundColorControl" name="backgroundColorControl"></li>
-
-          <input value="Start" type="submit" id="linesSubmit">
-          <input type="submit" id="lines-save" value="Save" class="save-button">
         </ul>
       </form><!--////////////////// close form linesSpeedControls//////////-->
 
-      <form id="sunflareControls">
-        <ul>
-          <li>Rotation SpeedY: <input type="range" id="sunflare-rotationX" name="sunflare-rotationX" min="-50" max="50"></li>
-          <li>Rotation SpeedX: <input type="range" id="sunflare-rotationY" name="sunflare-rotationY" min="-50" max="50"></li>
-          <li>Type of Star: <input type="range" id="sunflare-size" min="1" max="120"></li>
 
-          <input value="Start" type="submit" id="sunflareSubmit">
-          <input type="submit" id="sunflare-save" value="Save" class="save-button">
-
-        </ul>
-      </form><!--////////////////// close form sunflareControls//////////-->
-
-      <form id="cubeGridControls">
-        <ul>
-          <li>Particle Number: <input type="range" id="particleNumber" min="10" max="500"></li>
-          <li>Particle Speed Base: <input type="range" id="particleSpeedBase" min="10" max="150"></li>
-          <li id="particle-speed">Particle Speed Spread: <input type="range" id="particleSpeedSpread" min="0" max="200"></li>
-
-          <li id="cube-strength">Cube Strength: <input type="range" id="cubeStrength" min="1" max="50"></li>
-          <li id="cube-text">Text: <input type="text" id="cubeYourText"></li>
-          <li id="cube-backcolor">Background Color: <input type="color" id="cubeBackgroundColorControl"></li>
-          <li id="cube-textcolor">Text Color: <input type="color" id="cubeText3dColor"></li>
-
-          <input value="Start" type="submit" id="cubeGridSubmit">
-          <input type="submit" id="cubegrid-save" value="Save" class="save-button">
-        </ul>
-      </form><!--////////////////// close form cubeGridControls//////////-->
     </div><!--////////////////// close controllsList //////////-->
   </div><!--///////////// close vis-panel ////////-->
 

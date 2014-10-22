@@ -21,13 +21,13 @@
 /* sound and visual tab */
 a.sound-tab, a.vis-tab {
   display: block;
-  background: #FFF;
+  background: #000;
   position: relative;
   bottom: 0px;
   font-size: 1.5em;
   padding: 12px 8px 12px 8px;
   text-decoration: none;
-  color: #000;
+  color: #FFF;
 }
 
 /* sound tab */
@@ -46,9 +46,9 @@ a.sound-tab span {
 .vis-panel {
   width: 250px;
   height: auto;
-  background: #FFF;
+  background: #000;
   position: absolute;
-  color: #000;
+  color: #FFF;
   top: 100px;
   right: -250px;
   padding-bottom: 30px;

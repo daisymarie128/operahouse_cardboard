@@ -22,6 +22,7 @@ $(document).ready(function () {
 
     return {settings: settingHash};
   }
+  lines(getTimeDomain, getFrequencies);
   var sendValues = function(data) {
     $.ajax({
       url: '/settings',
@@ -45,7 +46,7 @@ $(document).ready(function () {
   };
   // Initialise settings
   $("#controllsList form").hide();
-  $("#sunflareControls").show();
+  $("#linesSpeedControls").show();
   // Listener for dropdown
   $( "#visualisers_list" ).on('change', function(){
     console.log($( "#visualisers_list option:selected" ).val());

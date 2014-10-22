@@ -25,12 +25,14 @@
 }
 
 body {
-  background-color: #F5533D;
+  background-color: #FFF;
   color: white;
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: Insaniburger;
   margin: 0;
+  background-image: url('http://i.imgur.com/yf1IhL9.jpg');
+  background-size: 1280px 700px;
 }
 
 #gh-btn {
@@ -49,11 +51,15 @@ body {
   display: block;
   font-size: 1.5em;
   letter-spacing: 2px;
-  border-left: 1px solid #FFF;
-  border-right: 1px solid #FFF;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   padding: 0 10px 0 10px;
   margin-left: 5px;
 
+}
+
+#title a{
+  color: #000;
 }
 
 #nav, #inner-nav {
@@ -106,4 +112,22 @@ footer {
   position: absolute;
   bottom: 0;
   padding-left: 10px;
+}
+
+#video-bg {
+position: fixed;
+right: 0;
+bottom: 0;
+width: auto;
+min-width: 100%;
+height: auto;
+min-height: 100%;
+z-index: -100;
+background: transparent url(video-bg.jpg) no-repeat;
+background-size: cover;
+}
+
+#videocontainer{
+  width: 100%;
+  position: absolute;
 }

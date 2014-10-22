@@ -11,27 +11,16 @@
 <body>
   <div id="container">
     <header>
-      <div id="gh-btn">
-        <iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork"
-  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-      </div>
-
-      <h3 id="title"><a href="/">Threedee</a></h3>
-
-      <%== smartnav %>
-      <div class="sign-in-form">
-        <%= form_tag(sessions_path, :id => "sign-in-ajax", :method => :post, remote: true) do %>
-          <%= text_field_tag :username, nil, :placeholder => "Username" %>
-
-          <%= password_field_tag :password, nil, :placeholder => "Password" %>
-
-          <%= submit_tag "Sign In" %>
-        <% end %>
-      </div>
+      <h3 id="title"><a href="/">OCTATTHEHOUSE</a></h3>
     </header>
+        <div id="videocontainer">
+                <video width="100%" autoplay loop poster="bg.jpg">
+                    <source src='/audio/bryan_adams_hq.m4v' type="video/mp4" />
+                </video>
+            </div>
     <%= yield %>
     <footer>
-      <p>Make You Wanna - Ta-Ku</p>
+      <p>Byan Adams at the OPera House</p>
     </footer>
   </div><!--/////////////////////////close container //////////-->
 </body>

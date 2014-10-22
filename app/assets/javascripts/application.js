@@ -16,6 +16,10 @@
 //= require jquery-ui
 //= require underscore
 //= require three.min.js
+//= require StereoEffect.js
+//= require THREEx.KeyboardState.js
+//= require THREEx.FullScreen.js
+//= require THREEx.WindowResize.js
 //= require visualiserHandler.js
 //= require_tree .
 

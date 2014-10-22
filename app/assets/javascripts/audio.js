@@ -16,10 +16,11 @@ var Sound = {
   },
   createAudioObject: function () {
     Sound.audio0 = new Audio();
-    Sound.audio0.src = '/audio/MakeYouWanna.mp3';
-    Sound.audio0.controls = true;
-    Sound.audio0.autoplay = false;
+    Sound.audio0.src = '/audio/output(mp3cut.net).mp3';
+    Sound.audio0.controls = false;
+    Sound.audio0.autoplay = true;
     Sound.audio0.loop = true;
+    Sound.audio0.muted = false;
   },
   setupAudioNodes: function () {
     Sound.sourceNode = Sound.audioContext.createMediaElementSource(Sound.audio0);
@@ -44,6 +45,7 @@ var Sound = {
 
 
 $(document).ready(function () {
+  $('video').prop('muted', true); //mute
 
 
 
@@ -63,6 +65,7 @@ $(document).ready(function () {
   $('#player audio').on('playing', function () {
     // frequency data console log
   })
+
 
   // ------------- FILE DRAG & DROP ------------------- //
   // reference source for code = http://html5demos.com/dnd-upload#view-source
