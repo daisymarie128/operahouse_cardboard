@@ -54,6 +54,15 @@ $(document).ready(function () {
     $('#popUpDiv').fadeOut(2000);
   })
 
+  //this starts the three.js canvas box.
+  $(".panarama").each(function(){
+    var canvas = $(this).find(".canvas");
+    var src = $(this).data("source");
+      sphere = new Photosphere(src);
+      sphere.loadPhotosphere(canvas[0]);
+      canvas.css('width',window.innerWidth).css('height',window.innerHeight)
+  });
+
   // Initial Audio setup
   Sound.audioContextSetup();
   Sound.createAudioObject();

@@ -157,3 +157,7 @@
   height: 650px;
   position: absolute;
 }
+
+.canvas{
+  position: absolute;
+}

@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
+    bcrypt (3.1.7-x64-mingw32)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -76,11 +77,17 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     pg (0.17.1)
+    pg (0.17.1-x64-mingw32)
     polyglot (0.3.5)
     pry (0.10.0)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry (0.10.0-x64-mingw32)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+      win32console (~> 1.3)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
     rack (1.5.2)
@@ -140,13 +147,17 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2014.8)
+      tzinfo (>= 1.0.0)
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     underscore-rails (1.6.0)
+    win32console (1.3.2)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -164,5 +175,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   soundcloud
   spring
+  tzinfo-data
   uglifier (>= 1.3.0)
   underscore-rails
